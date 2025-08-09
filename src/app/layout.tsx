@@ -1,16 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Arimo } from "next/font/google";
 import "./globals.css";
+import Menu from "@/components/common/Menu/Menu";
 
-const geistSans = Geist({
+const arimo = Arimo({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+  subsets: ["latin"]
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,8 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${arimo.variable} ${arimo.className} antialiased`}
       >
+        <Menu/>
         {children}
       </body>
     </html>
