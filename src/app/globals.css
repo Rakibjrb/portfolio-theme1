@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+body {
+  scroll-behavior: smooth;
+}
 .banner-bg {
   background: linear-gradient(#39498f, #2d3b5f);
 }

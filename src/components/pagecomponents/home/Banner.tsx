@@ -18,12 +18,12 @@ export default function Banner() {
         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center px-12 lg:px-0">
           <a
             href="#projects"
-            className="px-6 py-3 bg-[#64BDFF] hover:bg-[#64bcffaa] rounded-md text-black font-semibold transition duration-300">
+            className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-[#3c77a3] to-[#4098FF] text-white font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-1 transition duration-300">
             View Projects
           </a>
           <a
             href="#contact"
-            className="flex gap-3 justify-center px-6 py-3 border-2 border-gray-500 hover:border-[#64BDFF] text-gray-300 hover:text-white rounded-md font-medium transition duration-300">
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-gray-400 text-gray-200 hover:text-white hover:border-white rounded-lg font-medium transition duration-300 hover:bg-gray-800 hover:shadow-md transform hover:-translate-y-1">
             <FiMessageCircle className="text-2xl" />
             Contact Me
           </a>

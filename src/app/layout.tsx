@@ -5,9 +5,8 @@ import Menu from "@/components/common/Menu/Menu";
 
 const arimo = Arimo({
   variable: "--font-geist-sans",
-  subsets: ["latin"]
-})
-
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,10 +20,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${arimo.variable} ${arimo.className} antialiased`}
-      >
-        <Menu/>
+      <body className={`${arimo.variable} ${arimo.className} antialiased`}>
+        <Menu />
         {children}
       </body>
     </html>
